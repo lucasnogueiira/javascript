@@ -1,0 +1,50 @@
+body{
+    background: rgba(151, 50, 117, 0.897);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;   
+    padding: 15px;   
+    width: 500px; 
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.452);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.box{
+    width: 80px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.botao{
+    background-color: rgba(175, 14, 94, 0.808);
+    color: white;
+    font: normal 12pt Arial;
+    border-radius: 10px;
+    padding: 10px 12px;
+    border: 0px;
+    cursor: pointer;
+
+}
+
+.botao:hover{
+    background-color: rgba(124, 12, 68, 0.877);
+}

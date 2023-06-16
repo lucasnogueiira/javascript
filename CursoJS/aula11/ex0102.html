@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <style>
+        body{
+            font: normal 15pt Arial;
+        }
+        input#txtnac{
+            font: normal 15pt Arial;
+            width: 180px;
+        }
+        input#ipt{
+            font:normal 15pt Arial;
+            width: 100px
+        }
+        div{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detecção de Estrangeiros</h1>
+    Qual sua nacionalidade? <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" id="ipt" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtn = document.querySelector('input#txtnac')
+            var res = document.querySelector('div#res')
+            var nac = String(txtn.value)
+            res.innerHTML = (`Sua nacionalidade é <strong>${nac}</strong><br>`)
+            if (nac != ('Brasileiro')){
+                res.innerHTML += (`Você é estrangeiro!`)
+            }
+        }
+    </script>
+    
+</body>
+</html>
